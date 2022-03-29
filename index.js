@@ -66,4 +66,4 @@ client.on ('message', message => {
 /* 足りなかったら上のやつコピペして */
 
 
-client.login ("OTU4MzExOTQ3Mzc0MzA5Mzc2.YkLfjA.qbmePTuhN5rAbQxecPv7MPhue4k");
+client.login ("token");
