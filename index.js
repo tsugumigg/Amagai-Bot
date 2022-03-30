@@ -58,12 +58,16 @@ client.on ('message', message => {
 client.on ('message', message => {
   if (message.author.bot) return;
   if (message.content.match('@everyone やろ','天谷')){
-  message.channel.send('よろしくおねがいしーth')
+  message.channel.send('よろしくおねがいしまーth')
 }
 })
 
-
-/* 足りなかったら上のやつコピペして */
+client.on ('message', message => {
+  if (message.author.bot) return;
+  if (message.content.match('茶番','フォートナイト','fortnite)){
+  message.channel.send('それをやる前に今日の英語の勉強したの！？俺いったよね？毎日最低でも30秒はやれってやってないならやっちゃうだめ！見るのもだめ！')
+}
+})/* 足りなかったら上のやつコピペして */
 
 
 client.login ("token");
