@@ -63,7 +63,20 @@ client.on ('message', message => {
 })
 
 
-/* 足りなかったら上のやつコピペして */
+client.on ('message', message => {
+  if (message.author.bot) return;
+  if (message.content.match('killした','キルした','やった','殺った)){
+  message.channel.send('なーいすぅ、やっぱりらぁくしょうらぁくしょう')
+}
+})
+
+client.on ('message', message => {
+  if (message.author.bot) return;
+  if (message.content.match('茶番','ちゃばん','fortntie','フォートナイト','apex','APEX)){
+  message.channel.send('ちょっとそれやるまえにちゃんと勉強したのぉ！？毎日英語は10分でもいいからやれって言ったでしょぉ！！”')
+}
+})
+
 
 
 client.login ("token");
