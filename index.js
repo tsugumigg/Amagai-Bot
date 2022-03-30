@@ -63,7 +63,61 @@ client.on ('message', message => {
 })
 
 
-/* 足りなかったら上のやつコピペして */
+client.on ('messageCreate', (message) => {
+  if (message.author.bot) return;
+  if (message.content.match('うるさい','だまれ','黙れ')) {
+    message.channel.send('動物園へお帰りください')
+  })
+  
+
+client.on ('message', message => {
+  if (message.author.bot) return;
+  if (message.content.match('ホスト','茶番','ちゃばん','ほすと')){
+  message.channel.send('ええっ！？三谷ホストだったの！？')
+}
+})
+  
+  
+client.on ('message', message => {
+  if (message.author.bot) return;
+  if (message.content.match('ホスト','茶番','ちゃばん','ほすと')){
+  message.channel.send('ええっ！？三谷ホストだったの！？')
+}
+})
+
+  
+client.on ('message', message => {
+  if (message.author.bot) return;
+  if (message.content.match('おもんない','つまらない','泣く','なく')){
+  message.channel.send('ほら気持ち切り替えて！')
+}
 
 
-client.login ("token");
+client.on ('message', message => {
+  if (message.author.bot) return;
+  if (message.content.match('絶対やる？','ぜったいやる？','待って','やるから待って')){
+  message.channel.send('いったかんな！？')
+}
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})client.login ("token");
